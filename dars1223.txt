@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Manganresto</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Manganresto</div>
+  <nav>
+    <a>Home</a>
+    <a class="active">Menu</a>
+    <a>About</a>
+    <a>Location</a>
+    <a>Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <p class="small">Are You Hungry ?</p>
+    <h1>Don't Wait !</h1>
+    <p class="desc">Let start to order food now</p>
+    <button>Check Out Menu</button>
+  </div>
+
+  <div class="hero-right">
+    <div class="plate">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="box">
+    <h2>8</h2>
+    <h4>Best Chef</h4>
+    <p>Best chefs who create amazing taste</p>
+  </div>
+  <div class="box">
+    <h2>38</h2>
+    <h4>Best Menu</h4>
+    <p>Many delicious menus to choose</p>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#111;
+  color:white;
+  overflow:hidden;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:30px 80px;
+}
+.logo{color:#fcb900;font-weight:700;}
+nav a{margin:0 15px;color:#aaa;cursor:pointer;}
+nav .active,nav a:hover{color:#fcb900;}
+
+/* HERO */
+.hero{
+  position:relative;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:120px 80px 0;
+  height:70vh;
+}
+
+/* SARIQ MASK */
+.hero::before{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:45%;
+  height:100%;
+  background:#fcb900;
+  border-radius:0 0 0 400px;
+  z-index:-1;
+}
+
+/* LEFT */
+.hero-left .small{color:#ccc;}
+.hero-left h1{font-size:64px;margin:10px 0;}
+.hero-left .desc{color:#aaa;margin-bottom:30px;}
+
+button{
+  padding:14px 36px;
+  background:transparent;
+  border:2px solid white;
+  color:white;
+  cursor:pointer;
+}
+button:hover{
+  background:#fcb900;
+  color:black;
+  border-color:#fcb900;
+}
+
+/* RIGHT */
+.hero-right{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:40%;
+}
+.plate{
+  width:320px;
+  height:320px;
+  background:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.plate img{
+  width:85%;
+  border-radius:50%;
+}
+
+/* INFO */
+.info{
+  display:flex;
+  gap:60px;
+  padding-left:80px;
+  margin-top:20px;
+}
+.box h2{
+  color:#fcb900;
+  font-size:42px;
+}
+.box h4{
+  margin:5px 0;
+}
+.box p{
+  color:#aaa;
+  font-size:14px;
+}
